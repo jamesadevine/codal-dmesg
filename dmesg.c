@@ -1,5 +1,10 @@
 #include "dmesg.h"
-#include "lib/NVIC.h"
+
+#ifndef NVIC_HEADER_PATH
+#define NVIC_HEADER_PATH "nvic.h"
+#endif
+
+#include NVIC_HEADER_PATH
 #include <string.h>
 #include <stdio.h>
 
